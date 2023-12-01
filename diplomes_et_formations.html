@@ -1,6 +1,7 @@
 <head>
     <title>Curriculum vitae</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="diplomes.css">
   </head>
   <body>
     <header>
@@ -23,7 +24,7 @@
       </nav>
     </header>
     <div>
-        <h1>ÉTUDES ET FORMATIONS</span></h1>
+        <h1>DIPLOMES ET FORMATIONS</span></h1>
         <div>
             <p>
               <strong>CYCLE D'INGÉNIEUR EN INFORMATIQUE</strong> 
@@ -66,34 +67,35 @@
         </div>
     </div>
     <footer>
-      <!-- Ajoutez les liens vers les profils Facebook, LinkedIn et WhatsApp -->
-      <a href="https://www.facebook.com/youssef.rahali.3532?locale=fr_FR" target="_blank">
-          <img src="fb.jpg" alt="Facebook">
-      </a>
+      <form>
+        <h3>Vous pouvez remplir ce formulaire pour me contactez :</h3> 
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
 
-      <a href="https://www.linkedin.com/in/youssef-rahali-14bb42195/" target="_blank">
-          <img src="linkedin.jpg" alt="LinkedIn">
-      </a>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" required>
 
-      <a href="https://web.whatsapp.com/" target="_blank">
-        <img src="whatsapp.jpg" alt="whatsapp">
-    </a>
-    <form action="traitement_form.php" method="post">
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required>
+        <label for="sujet">Sujet :</label>
+        <input type="text" id="sujet" name="sujet" required>
 
-      <label for="email">E-mail :</label>
-      <input type="email" id="email" name="email" required>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="Envoyer"></label>
+        <button type="submit">Envoyer</button>
+    </form>
+    <!-- Ajoutez les liens vers les profils Facebook, LinkedIn et WhatsApp -->
+    <a href="https://www.facebook.com/youssef.rahali.3532?locale=fr_FR" target="_blank">
+      <img src="fb.jpg" alt="Facebook" width="5%">
+  </a>
 
-      <label for="sujet">Sujet :</label>
-      <input type="text" id="sujet" name="sujet" required>
+  <a href="https://www.linkedin.com/in/youssef-rahali-14bb42195/" target="_blank">
+      <img src="linkedin.jpg" alt="LinkedIn" width="5%">
+  </a>
 
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Envoyer</button>
-  </form>
-  </footer>
+  <a href="https://web.whatsapp.com/" target="_blank">
+    <img src="whatsapp.jpg" alt="whatsapp" width="5%">
+</a>
+    </footer>
   </body>
 
 

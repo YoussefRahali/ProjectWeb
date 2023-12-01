@@ -1,6 +1,7 @@
   <head>
     <title>Curriculum vitae</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="compétences.css">
   </head>
   <body>
     <header>
@@ -35,51 +36,50 @@
           </div>
           <div>
             <h2>Langues</h2>
-            <p>
-              Arabe, langue maternelle
-              <br>
-              Anglais, Francais
-            </p>
+            <ul>
+              <li>Arabe:langue maternelle.</li>
+              <li>Anglais</li>
+              <li>Francais</li>
+              <li>Espagnol</li>
+            </ul>
           </div>
           <div>
             <h2>Centres d'intérêt</h2>
-            <p>
-              Jeux vidéo
-              <br>
-              Musique
-              <br>
-              Sport
-              <br>
-              Informatique
-            </p>
+            <ul>
+              <li>Jeux vidéo</li>
+              <li>Musique</li>
+              <li>Sport</li>
+              <li>Informatique</li>
+            </ul>
           </div>
           <footer>
-            <!-- Ajoutez les liens vers les profils Facebook, LinkedIn et WhatsApp -->
-            <a href="https://www.facebook.com/youssef.rahali.3532?locale=fr_FR" target="_blank">
-                <img src="fb.jpg" alt="Facebook">
-            </a>
+            <form>
+              <h3>Vous pouvez remplir ce formulaire pour me contactez :</h3> 
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
+      
+              <label for="email">E-mail :</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="sujet">Sujet :</label>
+              <input type="text" id="sujet" name="sujet" required>
+      
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <label for="Envoyer"></label>
+              <button type="submit">Envoyer</button>
+          </form>
+          <!-- Ajoutez les liens vers les profils Facebook, LinkedIn et WhatsApp -->
+          <a href="https://www.facebook.com/youssef.rahali.3532?locale=fr_FR" target="_blank">
+            <img src="fb.jpg" alt="Facebook" width="5%">
+        </a>
     
-            <a href="https://www.linkedin.com/in/youssef-rahali-14bb42195/" target="_blank">
-                <img src="linkedin.jpg" alt="LinkedIn">
-            </a>
+        <a href="https://www.linkedin.com/in/youssef-rahali-14bb42195/" target="_blank">
+            <img src="linkedin.jpg" alt="LinkedIn" width="5%">
+        </a>
     
-            <a href="https://web.whatsapp.com/" target="_blank">
-              <img src="whatsapp.jpg" alt="whatsapp">
-          </a>
-          <form action="traitement_form.php" method="post">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
-    
-            <label for="email">E-mail :</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="sujet">Sujet :</label>
-            <input type="text" id="sujet" name="sujet" required>
-    
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-    
-            <button type="submit">Envoyer</button>
-        </form>
-        </footer>
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <img src="whatsapp.jpg" alt="whatsapp" width="5%">
+      </a>
+          </footer>
   </body>
