@@ -53,22 +53,36 @@
             </ul>
           </div>
           <footer>
-            <form>
+            <form action="#" method="get" name="index">
               <h3>Vous pouvez remplir ce formulaire pour me contactez :</h3> 
-              <label for="nom">Nom :</label>
+              <label for="nom">Nom* :</label>
               <input type="text" id="nom" name="nom" required>
+              <p style="color: red" id="nomEr"></p>
+    
+              <label for="prenom">Prénom* :</label>
+              <input type="text" id="prenom" name="prenom" required>
+              <p style="color: red" id="prenomEr"></p>
       
-              <label for="email">E-mail :</label>
+              <label for="email">E-mail* :</label>
               <input type="email" id="email" name="email" required>
+              <p style="color: red" id="emailEr"></p>
+    
+              <label for="cemail">Confirmation E-mail* : </label>
+              <input type="email" name="cemail" placeholder="Confirmer votre E-mail" id="cemail" />
+              <p style="color: red" id="cemailEr"></p>
+    
+              <label for="phone">Numéro Téléphone* :</label>
+              <input type="text" id="phone" name="phone"/>
+              <p style="color: red" id="phoneEr"></p>
       
-              <label for="sujet">Sujet :</label>
-              <input type="text" id="sujet" name="sujet" required>
-      
-              <label for="message">Message :</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-              <label for="Envoyer"></label>
-              <button type="submit">Envoyer</button>
+              <label for="sujet">Sujet* :</label>
+              <textarea id="sujet" name="sujet" rows="2" required></textarea>
+    
+              <label for="submit"></label>
+              <button type="submit" value="Submit">Submit</button>
+              <button type="reset" value="Reset">Reset</button>
           </form>
+          <p style="color: red" id="erreur"></p>
           <!-- Ajoutez les liens vers les profils Facebook, LinkedIn et WhatsApp -->
           <a href="https://www.facebook.com/youssef.rahali.3532?locale=fr_FR" target="_blank">
             <img src="fb.jpg" alt="Facebook" width="5%">
@@ -82,4 +96,5 @@
           <img src="whatsapp.jpg" alt="whatsapp" width="5%">
       </a>
           </footer>
+          <script src="index.js"></script>
   </body>
